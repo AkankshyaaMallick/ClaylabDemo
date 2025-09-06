@@ -74,7 +74,7 @@ export default function Hero() {
 
         <h1 className="text-white font-sourceSans font-thin leading-tight">
           <span className="block text-2xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-7xl">
-            Claylab is built by a community join us in shaping future-ready
+            Claylab is built by a community - Join us in shaping future-ready
             schools.
           </span>
         </h1>

@@ -82,9 +82,9 @@ const mentorshipProgram = () => {
     <section className="relative px-4 sm:px-6 lg:px-8 ">
       <div className=" px-6 mx-auto">
         {/* Header */}
-        <div className="text-left mb-12">
-          <Heading text="Mentorship Program (Grade 10)" />
-        </div>
+        <h2 className="font-[var(--font-kind-sans)] text-2xl sm:text-5xl md:text-5xl underline text-gray-900 tracking-tight leading-snug mb-8">
+              Mentorship Program (Grade 10)
+            </h2>
 
         {/* How does it work section */}
         <div>

@@ -109,7 +109,9 @@ const PillarsOfApproach = () => {
   return (
     <section className="py-8 sm:py-10 px-2 sm:px-4 md:px-16">
       {/* <Heading text="Pillars of Approach" /> */}
-      <Heading text="The Claylab Approach" />
+      <h2 className="font-[var(--font-kind-sans)] text-2xl sm:text-5xl md:text-5xl underline text-gray-900 tracking-tight leading-snug mb-8">
+              The ClayLab Approach
+            </h2>
 
       <h1 className="text-2xl mt-8">
         We prepare students for the future through four interconnected pillars :
@@ -119,7 +121,7 @@ const PillarsOfApproach = () => {
         {pillars.map((pillar, index) => (
           <div
             key={index}
-            className="relative h-[180px] sm:h-[250px] md:h-[320px] lg:h-[400px] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer"
+            className="relative h-[280px] sm:h-[350px] md:h-[320px] lg:h-[480px] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer"
           >
             {/* Background Image */}
             <Image
@@ -136,7 +138,7 @@ const PillarsOfApproach = () => {
             <div className="absolute inset-0">
               {/* Title */}
               <div className="absolute bottom-2 sm:bottom-4 md:bottom-6 w-full text-center px-2 sm:px-4 md:px-6 transition-all duration-500 ease-in-out group-hover:opacity-0 group-hover:translate-y-5">
-                <h3 className="text-white text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-start font-semibold leading-tight break-words">
+                <h3 className="font-[var(--font-kind-sans)] text-white text-xl sm:text-xl md:text-xl lg:text-2xl xl:text-3xl text-start font-semibold leading-tight break-words">
                   {pillar.title}
                 </h3>
               </div>

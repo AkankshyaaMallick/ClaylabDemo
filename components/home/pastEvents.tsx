@@ -243,7 +243,9 @@ const PastEvents = () => {
 
   return (
     <section className="py-8 sm:py-10 px-2 sm:px-4 md:px-16">
-      <Heading text="Past Events" />
+      <h2 className="font-[var(--font-kind-sans)] text-2xl sm:text-5xl md:text-5xl underline text-gray-900 tracking-tight leading-snug mb-8">
+        Past Events
+      </h2>
 
       <div className="relative flex items-center justify-center mt-6 sm:mt-8">
 
@@ -256,7 +258,7 @@ const PastEvents = () => {
         </button>
 
         {/* Carousel */}
-        <div className="relative flex justify-center items-center w-full max-w-full sm:max-w-7xl overflow-hidden h-[400px] sm:h-[400px]">
+        <div className="relative flex justify-center items-center w-full max-w-full sm:max-w-7xl overflow-hidden h-[400px] sm:h-[500px]">
           {images.map((image, index) => {
             const isActive = index === activeIndex;
             const isPrev = index === (activeIndex - 1 + images.length) % images.length;
@@ -359,9 +361,8 @@ const PastEvents = () => {
           <button
             key={index}
             onClick={() => goTo(index)}
-            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-200 ${
-              index === activeIndex ? "bg-green-600 scale-125" : "bg-gray-400 hover:bg-gray-500"
-            }`}
+            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-200 ${index === activeIndex ? "bg-green-600 scale-125" : "bg-gray-400 hover:bg-gray-500"
+              }`}
           />
         ))}
       </div>

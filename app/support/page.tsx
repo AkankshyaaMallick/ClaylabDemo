@@ -6,6 +6,7 @@ import Hero from "@/components/support/hero";
 import FAQ from "@/components/support/faq";
 import CountingNo from "@/components/support/countingNo";
 import WaysToSupportUs from "@/components/support/waysToSupportUs";
+import CommunitySection from "@/components/support/CommunitySection";
 
 
 // import { useEffect, useRef, useState } from "react";
@@ -21,6 +22,7 @@ export default function Home() {
       <CountingNo />
       <WaysToSupportUs/>
       {/* <TheImpact /> */}
+      <CommunitySection/>
       <FAQ />
     </div>
   );

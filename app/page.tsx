@@ -5,7 +5,6 @@ import Hero from "@/components/home/hero";
 import Stats from "@/components/home/stats";
 import WhyWeExist from "@/components/home/whyWeExist";
 import PillarsOfApproach from "@/components/home/pillarsOfApproach";
-import AwardsAndRecognitions from "@/components/home/awardsRecognition";
 import JoinMovement from "@/components/home/joinMovement";
 import PastEvents from "@/components/home/pastEvents";
 import Partners from "@/components/home/partners";

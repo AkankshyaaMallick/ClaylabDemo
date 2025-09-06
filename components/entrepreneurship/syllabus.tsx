@@ -79,16 +79,16 @@ const Syllabus = () => {
   };
 
   // Highlight phases as rocket passes
- const getPhaseOpacity = (index: number): number => {
-  if (index === currentPhase) return 1; // Highlight the current phase
-  if (index < currentPhase) return 1;   // Past phases stay lit
-  return 0.4;                           // Future phases dim
-};
+  const getPhaseOpacity = (index: number): number => {
+    if (index === currentPhase) return 1; // Highlight the current phase
+    if (index < currentPhase) return 1;   // Past phases stay lit
+    return 0.4;                           // Future phases dim
+  };
 
 
   return (
     <div className="py-8 sm:py-12 md:py-16 px-2 sm:px-4 md:px-16 gap-3 sm:gap-4 flex flex-col">
-      <h3 className="text-4xl sm:text-5xl font-bold text-green-800 mb-[-2%] underline">
+      <h3 className="text-4xl sm:text-5xl font-sourceSans font-thin text-green-800 mb-[-2%] underline">
         Syllabus
       </h3>
 
@@ -156,7 +156,7 @@ const Syllabus = () => {
                 <div className="w-80 mt-6 mx-auto ml-5">
                   <div className="bg-gray-700 rounded-full h-2 overflow-hidden">
                     <div
-                      className="h-full bg-gradient-to-r from-blue-500 to-purple-600 transition-all duration-1000 ease-out rounded-full"
+                      className="h-full bg-gradient-to-r from-blue-500 to-green-600 transition-all duration-1000 ease-out rounded-full"
                       style={{
                         width: `${((currentPhase + 1) / phases.length) * 100}%`,
                       }}
@@ -173,7 +173,7 @@ const Syllabus = () => {
 
           {/* Right Side Content */}
           <div className="lg:w-1/2 flex flex-col justify-center">
-            <h2 className="text-4xl font-bold text-gray-800 underline">
+            <h2 className="text-4xl font-sourceSans font-thin text-gray-800 underline">
               Course Overview
             </h2>
             <p className="text-3xl font-semibold text-gray-700 leading-relaxed mb-20">
@@ -184,40 +184,34 @@ const Syllabus = () => {
               around 6 stages
             </p>
 
-            {/* Images */}
-            <div className="flex flex-col items-center space-y-6">
-              <div className="relative w-full max-w-md group">
-                <img
-                  src="/claylab assets/sample1.jpg"
-                  alt="Sample 1"
-                  className="w-full rounded-lg shadow-lg"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center text-center text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg">
-                  "Every great journey begins with an idea."
+            {/* Polaroid-style Images */}
+            <div className="flex flex-col items-center space-y-8">
+              {[
+                { src: "/claylab assets/sample1.jpg", caption: "Every great journey begins with an idea." },
+                { src: "/claylab assets/sample2.jpg", caption: "Solutions are built step by step with creativity." },
+                { src: "/claylab assets/sample3.jpg", caption: "Your story is as important as your solution." },
+              ].map((img, index) => (
+                <div
+                  key={index}
+                  className="relative w-full max-w-md group transform transition-transform duration-300 hover:rotate-1 hover:scale-115"
+                >
+                  <div className="bg-white p-4 shadow-lg rounded-xl border border-gray-200 overflow-hidden">
+                    <img
+                      src={img.src}
+                      alt={`Sample ${index + 1}`}
+                      className="w-full rounded-lg"
+                    />
+                    {/* Caption appears only on hover */}
+                    <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-center text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg p-4">
+                      {img.caption}
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className="relative w-full max-w-md group">
-                <img
-                  src="/claylab assets/sample2.jpg"
-                  alt="Sample 2"
-                  className="w-full rounded-lg shadow-lg"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center text-center text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg">
-                  "Solutions are built step by step with creativity."
-                </div>
-              </div>
-              <div className="relative w-full max-w-md group">
-                <img
-                  src="/claylab assets/sample3.jpg"
-                  alt="Sample 3"
-                  className="w-full rounded-lg shadow-lg"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center text-center text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg">
-                  "Your story is as important as your solution."
-                </div>
-              </div>
+              ))}
             </div>
           </div>
+
+
         </div>
       </div>
     </div>

@@ -77,7 +77,7 @@ import Image from 'next/image'
 export const mentorshipSteps = [
   {
     id: 'I',
-    title: 'Curiosity for Mentors',
+    title: 'Curiosity towards the Mentee',
     image: '/claylab assets/mentorshipProgram/mentorshipJourney/63d5361a-6f2b-4d23-818d-6e6da3c26d8a 2.png',
     bg: 'bg-[#e1f0e6]',
   },
@@ -89,7 +89,7 @@ export const mentorshipSteps = [
   },
   {
     id: 'III',
-    title: 'Patience for learning',
+    title: 'Patience for results',
     image: '/claylab assets/mentorshipProgram/mentorshipJourney/ChatGPT Image Jun 19, 2025, 10_38_44 PM 5-2.png',
     bg: 'bg-[#d1ebd8]',
   },
@@ -106,9 +106,9 @@ const MentorshipJourney = () => {
     <section className=" lg:py-24 px-4 sm:px-6 lg:px-8">
       <div className="px-6">
         {/* Header */}
-        <div className="text-left mb-8 sm:mb-12 md:mb-16 lg:mb-16">
-          <Heading text="Our Approach" />
-        </div>
+        <h2 className="font-[var(--font-kind-sans)] text-2xl sm:text-5xl md:text-5xl underline text-gray-900 tracking-tight leading-snug mb-8">
+              Our Approach
+            </h2>
         <div>
           <p className="mt-16 text-2xl">
             At Claylab, we believe mentorship is not about lecturing, but about walking the journey together. Every mentor–mentee relationship is guided by these principles:

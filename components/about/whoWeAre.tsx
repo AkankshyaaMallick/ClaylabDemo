@@ -6,8 +6,8 @@ const WhoWeAre = () => {
         <div className="md:w-1/2">
           {/* Main Heading with Underline */}
           <div className="mb-12">
-            <h2 className="underline text-3xl sm:text-4xl md:text-5xl font-normal text-gray-900 mb-2">
-              Who We Are & Our Culture
+            <h2 className="font-[var(--font-kind-sans)] text-2xl sm:text-5xl md:text-5xl underline text-gray-900 tracking-tight leading-snug mb-8">
+              Who are we and our culture
             </h2>
           </div>
 

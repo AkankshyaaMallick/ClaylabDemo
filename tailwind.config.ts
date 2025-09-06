@@ -13,6 +13,9 @@ const config: Config = {
       animation: {
         'scroll': 'scroll 20s linear infinite',
         'spin-slow': 'spin 4s linear infinite',
+        'spin-slower': 'spin 8s linear infinite',
+        'spin-slow-delay': 'spin 8s linear infinite',
+        'spin-slower-delay': 'spin 4s linear infinite',
       },
       
       keyframes: {

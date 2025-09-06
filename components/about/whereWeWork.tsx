@@ -20,7 +20,7 @@ const WhereWeWork = () => {
               <div className="text-center">
                 <div className="w-full h-full rounded-lg flex items-center justify-center p-4">
                   <Image
-                    src="/claylab assets/aboutUs/whereWeWork/map.svg"
+                    src="/claylab assets/aboutUs/whereWeWork/map.gif"
                     alt="India Map"
                     fill
                     className="w-full h-full object-contain"
@@ -45,7 +45,7 @@ const WhereWeWork = () => {
             </p>
           </div> */}
 
-        <div className="flex items-center justify-center h-full">
+          <div className="flex items-center justify-center h-full">
             <div className="space-y-6 max-w-lg">
               <p className="text-lg sm:text-xl md:text-3xl text-gray-800 leading-relaxed">
                 We currently partner with schools in{" "}
@@ -63,20 +63,6 @@ const WhereWeWork = () => {
 
         </div>
 
-        {/* Bottom Quote Section */}
-        <div className="mt-16 pt-8 border-t border-gray-300">
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-800 leading-relaxed text-center mb-6">
-            Our strength lies in our people — a diverse team of educators,
-            mentors, and leaders who bring passion and purpose to every
-            classroom.
-          </p>
-
-          <div className="text-center">
-            <p className="text-2xl sm:text-3xl md:text-4xl font-roughScript text-gray-800 italic">
-              Meet the people behind Claylab.
-            </p>
-          </div>
-        </div>
       </div>
     </section>
   );
