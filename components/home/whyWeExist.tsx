@@ -304,7 +304,7 @@ const WhyWeExist = () => {
               width={300}
               height={100}
               className="mt-36 h-auto object-contain animate-spin-slower"
-              style={{ animationDelay: '5s' }} // second image starts after 5s
+              style={{ animationDelay: '0.5s' }} // second image starts after 5s
             />
 
             <div className="absolute mt-28 transform -translate-y-1/2 z-10">
