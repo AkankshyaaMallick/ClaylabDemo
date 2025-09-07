@@ -134,9 +134,11 @@ export default function Hero() {
           We partner with schools to prepare students for the future — helping them grow into confident leaders, problem-solvers, and change-makers.
         </p>
 
-        <Button className="bg-gradient-to-r from-green-800 to-green-600 hover:bg-gradient-to-r hover:from-green-700 hover:to-green-500 text-white rounded-md w-full sm:w-min px-8 sm:px-16 py-3 sm:py-4 text-base sm:text-lg">
-          Join us
-        </Button>
+        <Button className="hidden sm:flex bg-gradient-to-r from-green-800 to-green-600 hover:bg-gradient-to-r hover:from-green-700 hover:to-green-500 text-white rounded-md w-full sm:w-min px-8 sm:px-16 py-3 sm:py-4 text-base sm:text-lg">
+  Join us
+</Button>
+
+
       </div>
 
       {/* Image Indicators */}

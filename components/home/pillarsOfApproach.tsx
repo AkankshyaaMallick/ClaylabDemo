@@ -110,7 +110,7 @@ const PillarsOfApproach = () => {
     <section className="py-8 sm:py-10 px-2 sm:px-4 md:px-16">
       {/* <Heading text="Pillars of Approach" /> */}
       <h2 className="font-[var(--font-kind-sans)] text-2xl sm:text-5xl md:text-5xl underline text-gray-900 tracking-tight leading-snug mb-8">
-              The ClayLab Approach
+              The Claylab Approach
             </h2>
 
       <h1 className="text-2xl mt-8">

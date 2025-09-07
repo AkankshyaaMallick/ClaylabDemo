@@ -98,8 +98,8 @@ const mentorshipProgram = () => {
               <div>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   Each Grade 10 student is mapped with a unique mentor —{" "}
-                  <span className="font-bold text-green-600">a working professional </span>
-                  volunteering to guide one child.<br />
+                  <span className="font-bold text-green-600">a working professional volunteering </span>
+                   to guide one child.<br />
                   Together, the mentor and mentee work on{" "}
                   <span className="font-semibold text-green-600">6 key outputs:</span>
                 </p>

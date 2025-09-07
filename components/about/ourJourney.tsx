@@ -17,12 +17,12 @@ export default function OurJourney() {
           </div>
         </div> */}
 
-        <div className="sticky top-20 h-fit self-start">
-          <div className="space-y-4 sm:space-y-6">
+        <div className=" h-fit self-start">
+          <div className="bg-clay-light-hover space-y-4 sm:space-y-6">
             <h2 className="font-hendrigo text-4xl sm:text-4xl md:text-6xl lg:text-[6rem] text-green-900 leading-tight">
               Our Story
             </h2>
-            <p className="text-2xl sm:text-3xl md:text-4xl font-medium  sm:mt-80 md:mt-96">
+            <p className="text-2xl sm:text-3xl md:text4xl font-medium  sm:mt-80 md:mt-96">
               Claylab was started, in July 2020, by 3 Teach For India Fellows -
               Vivek, Brototy, and Purva who themselves had just taught Grade <strong>10 </strong>
               students from municipality schools in Mumbai.
@@ -31,7 +31,7 @@ export default function OurJourney() {
         </div>
 
         {/* Right Scrollable Section */}
-        <div className="space-y-6 sm:space-y-12 text-base sm:text-lg md:text-2xl text-gray-800">
+        <div className="bg-clay-light-hover space-y-6 sm:space-y-12 text-base sm:text-lg md:text-2xl text-gray-800">
           <p>
             With a mission to handhold their students till they get decent employment,
             Claylab focussed on holistic education of students.

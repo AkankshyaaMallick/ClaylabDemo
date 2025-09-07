@@ -20,7 +20,7 @@ const WhereWeWork = () => {
               <div className="text-center">
                 <div className="w-full h-full rounded-lg flex items-center justify-center p-4">
                   <Image
-                    src="/claylab assets/aboutUs/whereWeWork/map.gif"
+                    src="/claylab assets/aboutUs/whereWeWork/map.svg"
                     alt="India Map"
                     fill
                     className="w-full h-full object-contain"
