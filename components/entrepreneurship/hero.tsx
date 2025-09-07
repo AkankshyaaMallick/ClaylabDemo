@@ -9,7 +9,7 @@ export default function Hero() {
     // <section className="relative w-full h-[80vh] sm:h-screen flex flex-col items-center overflow-hidden">
     <section className="relative w-full h-[80vh] sm:h-screen flex flex-col items-center overflow-hidden">
       <Image
-        src="/claylab assets/general/HeroSectionImages/IMG_5000.jpg"
+        src="/claylab assets/general/HeroSectionImages/hero.jpg"
         alt="Background"
         fill
         className="object-cover object-center "
