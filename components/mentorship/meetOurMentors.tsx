@@ -257,13 +257,13 @@ const MeetMentors = () => {
         <div className="mt-16 sm:mt-20 lg:mt-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left side - Image */}
-            <div className="order-2 lg:order-1">
+            <div className="order-2 lg:order-1 h-full">
               <Image
                 src="/claylab assets/mentorshipProgram/meetOurMentors/Mentors collage.jpg"
                 alt="Mentors"
                 width={800}
                 height={450}
-                className="w-full h-auto rounded-lg shadow-lg"
+                className="w-full h-full object-cover rounded-lg shadow-lg"
               />
             </div>
 
