@@ -5,12 +5,12 @@ const Impact = () => {
   return (
     <div className="relative w-full">
       {/* Background image container with increased height */}
-      <div className="relative w-full h-[450px] sm:h-[600px] md:h-[750px] lg:h-[900px] flex justify-end overflow-hidden">
+      <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[550px] flex justify-end overflow-hidden">
         <Image
           src="/claylab assets/entrepreneurshipProgram/applySectionBg.png"
           alt="apply-section-bg"
           fill
-          className="object-contain object-right"
+          className="object-cover object-right"
           priority
         />
 
