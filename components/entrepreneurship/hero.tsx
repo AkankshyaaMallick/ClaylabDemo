@@ -29,7 +29,7 @@ export default function Hero() {
           </p>
           <p
             style={{ fontWeight: "100" }}
-            className="text-base sm:text-xl md:text-2xl text-white/70 mb-6 sm:mb-8 max-w-full sm:max-w-lg font-sourceSans font-thin"
+            className="text-base sm:text-2xl md:text-3xl text-white/90 mb-6 sm:mb-8 max-w-full sm:max-w-lg font-sourceSans font-thin"
           >
             The School of Entrepreneurship empowers school students to become
             solution-builders — through handson workshops, real-world projects,
