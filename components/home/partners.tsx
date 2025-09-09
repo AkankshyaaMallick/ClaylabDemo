@@ -55,7 +55,7 @@ const Partners: React.FC = () => {
       </h2>
       </div>
 
-      <div className="overflow-hidden px-4 sm:px-16 group">
+      <div className="overflow-hidden px-6 sm:px-16 group">
         <div className="flex animate-scroll group-hover:[animation-play-state:paused]">
           {/* First set of images */}
           {ImageData.map((data: PartnerImage, index: number) => (

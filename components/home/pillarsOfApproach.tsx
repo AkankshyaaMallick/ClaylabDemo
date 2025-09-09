@@ -80,7 +80,7 @@ import Image from "next/image";
 
 const pillars = [
   {
-    title: "Life Skills & Future Readiness",
+    title: "Life Skills",
     description:
       " Building agency, confidence, and practical 21st-century skills that help teenagers thrive in the real world.",
     image: "/claylab assets/home/pillarsOfApproach/first-one.jpg",
@@ -138,7 +138,7 @@ const PillarsOfApproach = () => {
             <div className="absolute inset-0">
               {/* Title */}
               <div className="absolute bottom-2 sm:bottom-4 md:bottom-6 w-full text-center px-2 sm:px-4 md:px-6 transition-all duration-500 ease-in-out group-hover:opacity-0 group-hover:translate-y-5">
-                <h3 className="font-[var(--font-kind-sans)] text-white text-xl sm:text-xl md:text-xl lg:text-2xl xl:text-3xl text-start font-semibold leading-tight break-words">
+                <h3 className="font-[var(--font-kind-sans)] text-white text-xl sm:text-xl md:text-xl lg:text-2xl xl:text-2xl text-start font-semibold leading-tight break-words">
                   {pillar.title}
                 </h3>
               </div>

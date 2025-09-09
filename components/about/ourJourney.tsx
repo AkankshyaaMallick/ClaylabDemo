@@ -19,7 +19,7 @@ export default function OurJourney() {
 
         <div className=" h-fit self-start">
           <div className="bg-clay-light-hover space-y-4 sm:space-y-6">
-            <h2 className="font-hendrigo text-4xl sm:text-4xl md:text-6xl lg:text-[6rem] text-green-900 leading-tight">
+            <h2 className="font-hendrigo text-2xl sm:text-4xl md:text-6xl lg:text-[6rem] text-green-900 leading-tight">
               Our Story
             </h2>
             <p className="text-2xl sm:text-3xl md:text4xl font-medium  sm:mt-80 md:mt-96">

@@ -2,7 +2,8 @@ import React from "react";
 
 const WaysToSupportUs = () => {
   return (
-    <div className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-16">
+    <div className="pt-12 sm:pt-16 md:pt-20 pb-2  sm:pb-4 md:pb-6 px-4 sm:px-6 md:px-16">
+
       <div className="mx-auto text-center">
         {/* Header */}
         <h2 className="text-3xl sm:text-5xl font-sourceSans font-thin leading-tight text-gray-800 mb-12 underline">

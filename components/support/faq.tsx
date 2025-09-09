@@ -131,8 +131,7 @@ const faqs = [
   },
   {
     question: "If I want to know more, whom shall I contact?",
-    answer:
-      "You can reach out to us at contact@claylab.education",
+    answer: "You can reach out to us at contact@claylab.education",
   },
   {
     question: "Can I sponsor a specific student or program?",
@@ -169,51 +168,9 @@ export default function FAQ() {
   };
 
   return (
-
     <div className="min-h-screen bg-clay-light-hover py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-stretch gap-12 lg:gap-16">
-          {/* Left Text Section */}
-          <div className="w-full lg:w-1/2 flex flex-col justify-center font-sourceSans font-thin relative min-h-[600px] lg:min-h-[700px]">
-            {/* Background Graphics */}
-            <div className="absolute inset-0 overflow-hidden">
-              <Image
-                className="absolute top-8 left-8 z-0 w-40 h-40 sm:w-56 sm:h-56 opacity-30"
-                src={"/claylab assets/general/circleGraphics.png"}
-                height={224}
-                width={224}
-                alt={"bg image graphics"}
-              />
-              <div className="absolute bottom-20 right-8 w-32 h-32 bg-gradient-to-br from-green-200 to-green-300 rounded-full opacity-20"></div>
-              <div className="absolute top-1/3 right-16 w-16 h-16 bg-gradient-to-br from-yellow-200 to-yellow-300 rounded-full opacity-25"></div>
-            </div>
-
-            <div className="relative z-10 text-center lg:text-left px-4 sm:px-8">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light leading-tight text-green-800 mb-8">
-                <div className="mb-2">
-                  Your <span className="italic font-bold text-green-700 bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent">answers</span>
-                </div>
-                <div className="mb-2">to popular</div>
-                <div className="mb-6">questions</div>
-              </h1>
-              
-              <div className="flex flex-col items-center lg:items-start gap-4">
-                <p className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-green-700 bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent">
-                  Apply now
-                </p>
-                <Image
-                  src={"/claylab assets/general/brushGraphics1.png"}
-                  height={12}
-                  width={240}
-                  className="w-48 sm:w-60 lg:w-72"
-                  alt={"underline"}
-                />
-                <button className="mt-6 px-8 py-4 bg-gradient-to-r from-green-600 to-green-700 text-white font-semibold rounded-full hover:from-green-700 hover:to-green-800 transform transition-all duration-300 shadow-lg hover:shadow-xl">
-                  Get Started Today
-                </button>
-              </div>
-            </div>
-          </div>
 
           {/* Right FAQ Section */}
           <div className="w-full lg:w-1/2 flex flex-col min-h-[600px] lg:min-h-[700px]">
@@ -221,21 +178,25 @@ export default function FAQ() {
               <h2 className="text-2xl sm:text-3xl font-bold text-green-800 mb-8 text-center">
                 Frequently Asked Questions
               </h2>
-              
+
               <div className="flex flex-col gap-4 max-h-[500px] lg:max-h-[550px] overflow-y-auto pr-2 custom-scrollbar">
                 {faqs.map((faq, i) => (
                   <div
                     key={i}
-                    className={`bg-gradient-to-r from-green-50 to-green-100/50 border border-green-200/50 p-4 px-5 rounded-2xl cursor-pointer transition-all duration-300  hover:shadow-lg group ${
-                      openIndex === i ? 'bg-gradient-to-r from-green-100 to-green-200/70 shadow-md' : ''
+                    className={`bg-gradient-to-r from-green-50 to-green-100/50 border border-green-200/50 p-4 px-5 rounded-2xl cursor-pointer transition-all duration-300 hover:shadow-lg group ${
+                      openIndex === i
+                        ? "bg-gradient-to-r from-green-100 to-green-200/70 shadow-md"
+                        : ""
                     }`}
                     onClick={() => toggleFAQ(i)}
                   >
                     <div className="text-base sm:text-lg font-semibold flex justify-between items-center text-green-800 group-hover:text-green-900">
                       <span className="flex-1 pr-4">{faq.question}</span>
-                      <span className={`text-2xl font-bold transition-transform duration-300 ${
-                        openIndex === i ? 'rotate-180' : ''
-                      }`}>
+                      <span
+                        className={`text-2xl font-bold transition-transform duration-300 ${
+                          openIndex === i ? "rotate-180" : ""
+                        }`}
+                      >
                         {openIndex === i ? "−" : "+"}
                       </span>
                     </div>
@@ -251,8 +212,21 @@ export default function FAQ() {
               </div>
             </div>
           </div>
+
+          {/* Left Side - Image */}
+          <div className="w-full lg:w-1/2 flex items-center justify-center">
+            <Image
+              src="/claylab assets/supportUs/faq.jpg"
+              alt="FAQ Illustration"
+              width={600}
+              height={600}
+              className="rounded-3xl shadow-lg object-cover"
+            />
+          </div>
         </div>
       </div>
+
+      
 
       <style jsx>{`
         .custom-scrollbar::-webkit-scrollbar {
@@ -270,8 +244,14 @@ export default function FAQ() {
           background: #94a3b8;
         }
         @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(-10px); }
-          to { opacity: 1; transform: translateY(0); }
+          from {
+            opacity: 0;
+            transform: translateY(-10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
         .animate-fadeIn {
           animation: fadeIn 0.3s ease-out;

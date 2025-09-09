@@ -123,10 +123,10 @@ export default function Hero() {
             {'Empowering every'}   
           </span>
           <span className="block text-2xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-7xl mt-2 sm:mt-3 lg:mt-4">
-           {' teenager for '}
+           {' teenager for life,'}
           </span>
           <span className="block text-2xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-7xl mt-2 sm:mt-3 lg:mt-4">
-           {'life, leadership and livelihoods'}
+           {' leadership and livelihoods'}
           </span>
         </h1>
 
